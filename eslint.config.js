@@ -1,6 +1,6 @@
 import js from "@eslint/js";
 import globals from "globals";
-import tseslint from "typescript-eslint";
+import {configs} from "typescript-eslint";
 import expoConfig from "eslint-config-expo/flat.js";
 import { defineConfig } from "eslint/config";
 
@@ -10,5 +10,5 @@ export default defineConfig([
     { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"], plugins: { js }, extends: ["js/recommended"] },
     { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"], languageOptions: { globals: { ...globals.browser, ...globals.node } } },
     expoConfig,
-    tseslint.configs.recommended,
+    configs.recommended,
 ]);
