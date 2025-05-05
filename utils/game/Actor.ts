@@ -8,3 +8,6 @@ export default abstract class Actor {
 
     abstract readValidMove(match: Match): Promise<[number, number]>;
 }
+
+let teste = 'TESTANDO LINTER';
+console.log(teste);
