@@ -4,10 +4,6 @@ import Match from "./Match";
 export default class Player extends Actor {
     private resolver: ((value: [number, number]) => void) | null = null;
 
-    constructor(name: string) {
-        super(name);
-    }
-
     async readValidMove(match: Match): Promise<[number, number]> {
         while (true) {
             const [row, column] = await new Promise<[number, number]>((resolve) => {
