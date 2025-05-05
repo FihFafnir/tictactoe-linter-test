@@ -1,7 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
 import tseslint from "typescript-eslint";
-import expoConfig from "eslint-config-expo/flat";
+import expoConfig from "eslint-config-expo/flat.js";
 import { defineConfig } from "eslint/config";
 
 
